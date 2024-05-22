@@ -1,29 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Criar Email Temporário</title>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Email</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="container">
-    <div id="criar-email">
-        <h1>Gerar o Email Temporário</h1>
-        <label for="email-desejado">Digite como quer o email:</label>
-        <input type="text" id="email-desejado" placeholder="Digite como quer o email">
-        <button id="btn-criar-email">Criar Email</button>
+    <div class="container">
+        <h1>Gerador de Email temporário</h1>
+        <button id="btn-criar-email">Gerar</button>
+        <div id="email-gerado"></div>
+        <div id="emails-criados">
+            <h2>Emails Criados:</h2>
+            <ul id="emails-lista"></ul>
+        </div>
     </div>
-    <div id="caixa-entrada" style="display: none;">
-        <h1>Caixa de Entrada</h1>
-        <ul id="mensagens"></ul>
-    </div>
-    <div id="visualizar-mensagem" style="display: none;">
-        <h2>Detalhes da Mensagem</h2>
-        <div id="mensagem-conteudo"></div>
-        <button id="btn-voltar">Voltar para Caixa de Entrada</button>
-    </div>
-</div>
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
